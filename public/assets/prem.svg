@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="lapelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b47854"/>
+      <stop offset="50%" stop-color="#a06442"/>
+      <stop offset="100%" stop-color="#8c4e2f"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <radialGradient id="highlight" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="480" rx="24" fill="url(#bgGrad)"/>
+  <rect width="400" height="480" rx="24" fill="url(#highlight)"/>
+
+  <!-- Subtle Studio Halo -->
+  <circle cx="200" cy="180" r="140" fill="#3b82f6" opacity="0.08" filter="blur(30px)"/>
+  <circle cx="200" cy="160" r="90" fill="#8b5cf6" opacity="0.12" filter="blur(20px)"/>
+
+  <!-- Body / Navy Suit -->
+  <g filter="url(#shadow)">
+    <!-- Shoulders & Torso -->
+    <path d="M70 480 C70 370 110 330 140 310 L260 310 C290 330 330 370 330 480 Z" fill="url(#suitGrad)"/>
+    
+    <!-- White Dress Shirt Collar -->
+    <polygon points="175 310, 200 375, 155 310" fill="#f8fafc"/>
+    <polygon points="225 310, 200 375, 245 310" fill="#e2e8f0"/>
+    
+    <!-- Tie / Accents -->
+    <polygon points="195 325, 205 325, 208 420, 200 440, 192 420" fill="#4338ca"/>
+    <polygon points="195 325, 205 325, 202 345, 198 345" fill="#6366f1"/>
+
+    <!-- Suit Lapels -->
+    <path d="M140 310 L185 410 L165 480 L110 480 C100 420 115 350 140 310 Z" fill="url(#lapelGrad)"/>
+    <path d="M260 310 L215 410 L235 480 L290 480 C300 420 285 350 260 310 Z" fill="url(#lapelGrad)"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="178" y="240" width="44" height="75" rx="6" fill="url(#skinGrad)"/>
+  <path d="M178 285 Q200 300 222 285 L222 300 Q200 315 178 300 Z" fill="#783d21" opacity="0.4"/>
+
+  <!-- Head / Face -->
+  <g filter="url(#shadow)">
+    <!-- Ears -->
+    <ellipse cx="140" cy="190" rx="12" ry="18" fill="#965636"/>
+    <ellipse cx="260" cy="190" rx="12" ry="18" fill="#965636"/>
+    <ellipse cx="140" cy="190" rx="7" ry="11" fill="#783d21"/>
+    <ellipse cx="260" cy="190" rx="7" ry="11" fill="#783d21"/>
+
+    <!-- Face Shape -->
+    <path d="M144 150 C144 110 256 110 256 150 C256 210 236 260 200 264 C164 260 144 210 144 150 Z" fill="url(#skinGrad)"/>
+
+    <!-- Hair -->
+    <path d="M136 142 C136 85 160 65 200 65 C240 65 264 85 264 142 C255 130 240 125 220 126 C190 128 170 120 155 130 C145 136 140 140 136 142 Z" fill="url(#hairGrad)"/>
+    <path d="M142 125 C150 95 180 80 220 80 C245 80 255 95 260 115 C250 102 230 96 205 98 C175 100 155 110 142 125 Z" fill="#27272a"/>
+
+    <!-- Eyebrows -->
+    <path d="M158 152 Q174 146 188 150" stroke="#18181b" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M212 150 Q226 146 242 152" stroke="#18181b" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes -->
+    <ellipse cx="174" cy="166" rx="7.5" ry="5.5" fill="#f8fafc"/>
+    <ellipse cx="226" cy="166" rx="7.5" ry="5.5" fill="#f8fafc"/>
+    <circle cx="175" cy="166" r="3.8" fill="#18181b"/>
+    <circle cx="225" cy="166" r="3.8" fill="#18181b"/>
+    <circle cx="176.5" cy="164.5" r="1.2" fill="#ffffff"/>
+    <circle cx="226.5" cy="164.5" r="1.2" fill="#ffffff"/>
+
+    <!-- Nose -->
+    <path d="M200 162 L200 196 L206 198" stroke="#783d21" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Confident Smile -->
+    <path d="M178 218 Q200 234 222 218" stroke="#522410" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M182 220 Q200 230 218 220" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Clean Editorial Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="110" height="28" rx="14" fill="#090d16" fill-opacity="0.75" stroke="#334155" stroke-width="1"/>
+    <circle cx="14" cy="14" r="4" fill="#10b981"/>
+    <text x="26" y="18" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Prem Kumar M</text>
+  </g>
+
+  <g transform="translate(280, 24)">
+    <rect width="96" height="28" rx="14" fill="#6d28d9" fill-opacity="0.3" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="48" y="18" text-anchor="middle" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600">Tap to Flip ↻</text>
+  </g>
+</svg>
